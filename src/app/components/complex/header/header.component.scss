@@ -1,0 +1,62 @@
+.header-active { 
+    //background: /*linear-gradient(to bottom, #000000e6, #000000a4, #00000000)*/;
+    //background: linear-gradient(to bottom, #00000084, #ffffff00);
+    background-color: #23385384;
+    transition: all 1s;
+
+    .sections a{
+        color: white;
+        transition: all 1s;
+    }
+}
+
+.header-no-active {
+    background: linear-gradient(to bottom, #23385384, #23385314);
+    transition: all 1s;
+}
+
+@media only screen and (min-width: 600px) {
+    header{
+        position: fixed;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:  "lgo lgo dta dta dta dta";
+        padding: 10px 0;
+        
+        .info{
+            grid-area: lgo;
+            height: 60px;
+
+            .logoHeader{
+                border-radius: 125px;
+                height: 100%;
+                padding: 0 10px;
+            }
+        }
+    
+        .sections{
+            grid-area: dta;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 1rem;
+    
+            a{
+                font-weight: bolder;
+                //color: rgb(34, 75, 114);
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                padding: 0 1rem;
+                font-size: 1.2rem;
+                font-weight: 600;
+    
+                &:hover{
+                    transition: .5s;
+                    //border-bottom: solid 2px #000000;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
