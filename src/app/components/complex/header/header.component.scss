@@ -1,7 +1,9 @@
 .header-active { 
     //background: /*linear-gradient(to bottom, #000000e6, #000000a4, #00000000)*/;
     //background: linear-gradient(to bottom, #00000084, #ffffff00);
-    background-color: #23385384;
+    background-color: #1e2d40;
+    /*background-color: #233853;
+    background-color: #23385384;*/
     transition: all 1s;
 
     .sections a{
@@ -11,7 +13,7 @@
 }
 
 .header-no-active {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.3);
     transition: all 1s;
 }
 
@@ -31,7 +33,7 @@
             .logoHeader{
                 border-radius: 125px;
                 height: 100%;
-                padding: 0 10px;
+                margin: 0 10px;
             }
         }
     
